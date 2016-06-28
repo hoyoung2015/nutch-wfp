@@ -24,7 +24,7 @@
 	</property>
 	<property>
 		<name>http.agent.name</name>
-		<value>hello nutch</value>
+		<value>google spider</value>
 		<description></description>
 	</property>
 	<property>
@@ -35,4 +35,26 @@
 		<name>db.ignore.external.links</name>
 		<value>true</value>
 	</property>
+	<property>
+  <name>db.max.outlinks.per.page</name>
+  <value>2000</value>
+</property>
+<property>
+  <name>fetcher.server.delay</name>
+  <value>8.0</value>
+</property>
+<property>
+  <name>fetcher.threads.fetch</name>
+  <value>3</value>
+</property>
+<property>
+  <name>fetcher.store.content</name>
+  <value>false</value>
+  <description>If true, fetcher will store content.</description>
+</property>
+<!-- 解析超时时间 -->
+<property>
+  <name>parser.timeout</name>
+  <value>300</value>
+</property>
 </configuration>
