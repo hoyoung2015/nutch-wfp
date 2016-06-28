@@ -278,6 +278,8 @@ public class ParseUtil extends Configured {
 						} catch (final MalformedURLException e) {
 							toHost = null;
 						}
+//						System.out.println("toHost>>>"+toHost);
+//						System.out.println("fromHost>>>"+fromHost);
 						if (toHost == null || !toHost.equals(fromHost)) { // external
 																			// links
 							/**

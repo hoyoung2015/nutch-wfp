@@ -47,11 +47,17 @@
   <name>fetcher.threads.fetch</name>
   <value>3</value>
 </property>
+<!-- 
 <property>
   <name>fetcher.store.content</name>
   <value>false</value>
-  <description>If true, fetcher will store content.</description>
+  <description>如果这里设置为不存储内容，那么要在fetcher的时候就解析</description>
 </property>
+<property>
+  <name>fetcher.parse</name>
+  <value>true</value>
+</property>
+ -->
 <!-- 解析超时时间 -->
 <property>
   <name>parser.timeout</name>
