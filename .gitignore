@@ -1,0 +1,8 @@
+build/
+docs/
+lib/
+logs/
+runtime/
+.classpath
+.project
+hadoop.log
