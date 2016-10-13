@@ -29,7 +29,7 @@
 	</property>
 	<property>
 		<name>plugin.folders</name>
-		<value>/home/hoyoung/local/nutch-2.3.1/build/plugins</value>
+		<value>/home/hoyoung/local/nutch-wfp/build/plugins</value>
 	</property>
 	<property>
 		<name>db.ignore.external.links</name>
