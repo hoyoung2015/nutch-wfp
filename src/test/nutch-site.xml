@@ -21,5 +21,9 @@
   <value>org.apache.gora.memory.store.MemStore</value>
   <description>Default in-memory datastore class for temp test data.</description>
 </property>
-
+<property>
+  <name>http.agent.name</name>
+  <value>Nutch-Test</value>
+  <description></description>
+</property>
 </configuration>

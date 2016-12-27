@@ -15,52 +15,52 @@
 
 <configuration>
 	<property>
-		<name>plugin.includes</name>
-		<value>protocol-httpclient|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|urlnormalizer-(pass|regex|basic)|scoring-opic
-		</value>
-		<description></description>
-	</property>
-	<property>
 		<name>storage.data.store.class</name>
 		<value>org.apache.gora.mongodb.store.MongoStore</value>
 		<description>
 			org.apache.gora.mongodb.store.MongoStore
-			Gora class for
-			storing data in MongoDB.
+			Gora class for storing data in MongoDB.
 		</description>
 	</property>
 	<property>
 		<name>http.agent.name</name>
-		<value>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML,
-			like Gecko) Chrome/55.0.2883.87 Safari/537.36</value>
+		<value>google spider</value>
 		<description></description>
+	</property>
+	<property>
+		<name>plugin.folders</name>
+		<value>/home/hoyoung/local/nutch-2.3.1/build/plugins</value>
 	</property>
 	<property>
 		<name>db.ignore.external.links</name>
 		<value>true</value>
 	</property>
 	<property>
-		<name>db.max.outlinks.per.page</name>
-		<value>2000</value>
-	</property>
-	<property>
-		<name>plugin.folders</name>
-		<value>/home/hoyoung/local/nutch-wfp/build/plugins</value>
-	</property>
-	<property>
-		<name>fetcher.server.delay</name>
-		<value>3.0</value>
-	</property>
-	<property>
-		<name>fetcher.threads.fetch</name>
-		<value>5</value>
-	</property>
-	<!-- <property> <name>fetcher.store.content</name> <value>false</value> 
-		<description>如果这里设置为不存储内容，那么要在fetcher的时候就解析</description> </property> <property> 
-		<name>fetcher.parse</name> <value>true</value> </property> -->
-	<!-- 解析超时时间 -->
-	<property>
-		<name>parser.timeout</name>
-		<value>600</value>
-	</property>
+  <name>db.max.outlinks.per.page</name>
+  <value>2000</value>
+</property>
+<property>
+  <name>fetcher.server.delay</name>
+  <value>8.0</value>
+</property>
+<property>
+  <name>fetcher.threads.fetch</name>
+  <value>3</value>
+</property>
+<!-- 
+<property>
+  <name>fetcher.store.content</name>
+  <value>false</value>
+  <description>如果这里设置为不存储内容，那么要在fetcher的时候就解析</description>
+</property>
+<property>
+  <name>fetcher.parse</name>
+  <value>true</value>
+</property>
+ -->
+<!-- 解析超时时间 -->
+<property>
+  <name>parser.timeout</name>
+  <value>300</value>
+</property>
 </configuration>

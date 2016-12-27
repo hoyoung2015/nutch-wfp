@@ -1,6 +1,6 @@
-build/
+build/*
 docs/
-lib/
+lib/*
 logs/
 runtime/
 .classpath
