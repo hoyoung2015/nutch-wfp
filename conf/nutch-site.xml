@@ -15,10 +15,9 @@
 
 <configuration>
 	<property>
-		<name>plugin.includes</name>
-		<value>protocol-httpclient|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|urlnormalizer-(pass|regex|basic)|scoring-opic
-		</value>
-		<description></description>
+	  <name>plugin.includes</name>
+	 <value>protocol-httpclient|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|urlnormalizer-(pass|regex|basic)|scoring-opic</value>
+	 <description></description>
 	</property>
 	<property>
 		<name>storage.data.store.class</name>
@@ -41,19 +40,27 @@
 	</property>
 	<property>
 		<name>db.max.outlinks.per.page</name>
-		<value>2000</value>
+		<value>5000</value>
 	</property>
 	<property>
 		<name>plugin.folders</name>
-		<value>/home/hoyoung/local/nutch-wfp/build/plugins</value>
+		<value>/home/hoyoung/workspace/eclipse/nutch-wfp/build/plugins</value>
 	</property>
 	<property>
 		<name>fetcher.server.delay</name>
 		<value>3.0</value>
 	</property>
+<property>
+  <name>file.content.limit</name>
+  <value>655360</value>
+</property>
+<property>
+  <name>http.content.limit</name>
+  <value>655360</value>
+</property>
 	<property>
 		<name>fetcher.threads.fetch</name>
-		<value>5</value>
+		<value>10</value>
 	</property>
 	<!-- <property> <name>fetcher.store.content</name> <value>false</value> 
 		<description>如果这里设置为不存储内容，那么要在fetcher的时候就解析</description> </property> <property> 

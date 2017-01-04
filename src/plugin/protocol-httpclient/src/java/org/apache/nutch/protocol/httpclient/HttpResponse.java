@@ -26,6 +26,7 @@ import java.net.URL;
 import org.apache.avro.util.Utf8;
 import org.apache.commons.httpclient.Header;
 import org.apache.commons.httpclient.HttpVersion;
+import org.apache.commons.httpclient.URI;
 import org.apache.commons.httpclient.cookie.CookiePolicy;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.params.HttpMethodParams;
@@ -74,7 +75,12 @@ public class HttpResponse implements Response {
 
     // Prepare GET method for HTTP request
     this.url = url;
-    GetMethod get = new GetMethod(url.toString());
+    String tmp = new org.apache.commons.httpclient.URI(url.toString(),false,"utf-8").toString();
+    this.url = new URL(tmp);
+    GetMethod get = new GetMethod(this.url.toString());
+    
+    
+    
     get.setFollowRedirects(followRedirects);
     get.setDoAuthentication(true);
     if (page.getModifiedTime() > 0) {
