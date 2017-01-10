@@ -48,15 +48,15 @@
 	</property>
 	<property>
 		<name>fetcher.server.delay</name>
-		<value>3.0</value>
+		<value>2.0</value>
 	</property>
 <property>
   <name>file.content.limit</name>
-  <value>655360</value>
+  <value>65536</value>
 </property>
 <property>
   <name>http.content.limit</name>
-  <value>655360</value>
+  <value>65536</value>
 </property>
 	<property>
 		<name>fetcher.threads.fetch</name>
